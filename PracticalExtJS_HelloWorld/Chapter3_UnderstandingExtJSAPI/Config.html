@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../ExtJS/resources/css/ext-all.css" rel="stylesheet" />
+    <script src="../ExtJS/ext-all.js"></script>
+    <script>
+        Ext.define("Naruto", {
+            config: {
+                title: "",
+                price: -1,
+                authors: []
+            },
+            constructor: function (config) {
+                this.initConfig(config);
+            }
+        });
+
+        var xml = Ext.create("Naruto", {
+            title: "extjs for beginners",
+            price: 400,
+            authors: ["Naruto", "Akhil"]
+        });
+        console.log(xml.getAuthors());
+        console.log(xml.getPrice());
+        console.log(xml.getTitle());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

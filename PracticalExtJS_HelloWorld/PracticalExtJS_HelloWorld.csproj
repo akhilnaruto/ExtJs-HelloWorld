@@ -75,6 +75,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Chapter3_UnderstandingExtJSAPI\Config.html" />
+    <Content Include="Chapter3_UnderstandingExtJSAPI\Objects.html" />
     <Content Include="ExtJS\ext-all.js" />
     <Content Include="ExtJS\resources\css\ext-all.css" />
     <Content Include="ExtJS\resources\ext-theme-classic\ext-theme-classic-all-debug.css" />
@@ -546,6 +548,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
