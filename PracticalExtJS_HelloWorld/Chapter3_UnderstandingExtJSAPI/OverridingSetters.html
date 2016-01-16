@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../ExtJS/resources/css/ext-all.css" rel="stylesheet" />
+    <script src="../ExtJS/ext-all.js"></script>
+    <script>
+        Ext.define("Naruto", {
+            config: {
+                title: "Konaha",
+                authors: [],
+                price: 5
+            },
+            constructor: function (config) {
+                this.initConfig = config;
+            },
+            setPrice: function (priceValue) {
+                if (priceValue < 5) {
+                    console.log("it should be more than 5");
+                    return;
+                }
+                this.price = priceValue;
+            }
+        });
+
+        var xml = Ext.create("Naruto", {
+            title: "Anime",
+            authors: ["Sasuke", "Sakura"]
+        });
+
+        xml.setPrice(2);
+        console.log(xml.getPrice());
+        xml.setPrice(40);
+        console.log(xml.getPrice());
+        console.log(xml.getAuthors());
+    </script>
+    
+</head>
+<body>
+
+</body>
+</html>

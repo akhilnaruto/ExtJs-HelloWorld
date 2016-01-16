@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link href="../ExtJS/resources/css/ext-all.css" rel="stylesheet" />
+	<script src="../ExtJS/ext-all.js"></script>
+	<script>
+		Ext.define("Naruto", {
+			config: {
+				authors: [],
+				price: 5,
+				village: "konoha"
+			},
+			constructor: function (config) {
+				this.initConfig = config;
+			},
+			applyPrice: function (priceValue) {
+				if (priceValue < 5) {
+					console.log("Price value must be greater than 5");
+					return;
+				}
+				this.price = priceValue;
+			}
+
+		});
+
+		var naruto = Ext.create("Naruto", {
+			authors: ["Sasuke", "sakura"],
+			village: "Leaf Village"
+		});
+
+	  //  console.log(naruto);
+
+		naruto.setPrice(2);
+		console.log(naruto.getPrice());
+
+		naruto.setVillage("Konaha");
+		console.log(naruto.getVillage());
+		console.log(naruto.getAuthors());
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

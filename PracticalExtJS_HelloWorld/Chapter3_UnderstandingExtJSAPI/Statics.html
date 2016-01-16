@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link href="../ExtJS/resources/css/ext-all.css" rel="stylesheet" />
+	<script src="../ExtJS/ext-all.js"></script>
+	<script>
+		Ext.define("Naruto", {
+			statics: {
+				numberOfBooks: 0,
+				getNumberOfBooks: function () {
+					return this.numberOfBooks;
+				}
+			},
+			constructor: function () {
+			    //this.statics().numberOfBooks++;
+			    this.self.numberOfBooks++;
+			}
+		  
+		});
+
+		Ext.create("Naruto");
+		Ext.create("Naruto");
+		Ext.create("Naruto");
+		Ext.create("Naruto");
+		console.log(Naruto.getNumberOfBooks());
+	</script>
+</head>
+<body>
+
+</body>
+</html>
