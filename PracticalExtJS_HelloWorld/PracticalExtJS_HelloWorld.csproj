@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Chapter3_UnderstandingExtJSAPI\ImplementingApplyMethod.html" />
+    <Content Include="Chapter3_UnderstandingExtJSAPI\Inheritance.html" />
     <Content Include="Chapter3_UnderstandingExtJSAPI\OverridingSetters.html" />
     <Content Include="Chapter3_UnderstandingExtJSAPI\Statics.html" />
     <Content Include="packages.config" />
