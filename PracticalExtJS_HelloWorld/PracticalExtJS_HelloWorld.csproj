@@ -70,6 +70,7 @@
     <Content Include="Chapter3_UnderstandingExtJSAPI\Inheritance.html" />
     <Content Include="Chapter3_UnderstandingExtJSAPI\Mixins.html" />
     <Content Include="Chapter3_UnderstandingExtJSAPI\OverridingSetters.html" />
+    <Content Include="Chapter3_UnderstandingExtJSAPI\Singleton.html" />
     <Content Include="Chapter3_UnderstandingExtJSAPI\Statics.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">

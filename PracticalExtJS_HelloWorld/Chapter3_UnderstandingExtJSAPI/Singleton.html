@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link href="../ExtJS/resources/css/ext-all.css" rel="stylesheet" />
+	<script src="../ExtJS/ext-all.js"></script>
+	<script>
+		Ext.define("Company", {
+			singleton: true,
+			config: {
+				title: "Naruto Corp",
+				employees: 155
+			},
+			getNumberOfEmployees: function () {
+				return this.getEmployees()
+			}
+		});
+
+		console.log(Company.title);
+		console.log(Company.getNumberOfEmployees());
+		Company.employees = 200;
+		console.log(Company.getNumberOfEmployees());
+	</script>
+</head>
+<body>
+
+</body>
+</html>
