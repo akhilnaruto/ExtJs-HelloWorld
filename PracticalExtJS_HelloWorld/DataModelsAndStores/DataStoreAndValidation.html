@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../ExtJS/resources/css/ext-all.css" rel="stylesheet" />
+    <script src="../ExtJS/ext-all.js"></script>
+  <script>
+      Ext.define('SessionModel', {
+          extend: 'Ext.data.Model',
+          fields: [
+              { name: 'id', type: 'int' },
+              { name: 'title', type: 'string' },
+              { name: 'sessionLevel', type: 'int' },
+              { name: 'approved', type: 'bool', defaultValue: false }
+          ],
+          
+          validations: [
+              { type: 'length', field: 'title', min: 3 },
+              { type: 'inclusion', field: 'sessionLevel', list: [1,2,3] }
+
+          ]
+      });
+
+      var mySession = Ext.create('SessionModel', {
+          title: 'Angular',
+          sessionLevel: 5
+      });
+
+      if (!mySession.isValid()) {
+          var errors = mySession.validate();
+          errors.each(function (rec) {
+              console.log(rec);
+          });
+      }
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
