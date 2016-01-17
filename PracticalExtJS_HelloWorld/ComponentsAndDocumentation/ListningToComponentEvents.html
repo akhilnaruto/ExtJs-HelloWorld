@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link href="../ExtJS/resources/css/ext-all.css" rel="stylesheet" />
+	<script src="../ExtJS/ext-all.js"></script>
+	<script>
+		Ext.application({
+			name: 'Naruto Uzumaki',
+			launch: function () {
+				Ext.create('Ext.container.Viewport', {
+					items: [
+						{
+							tpl: 'Name : {first} {last}',
+							data: {
+								first: 'Naruto',
+								last:'Uzumaki'
+							},
+
+							resizable: true,
+							width: 200,
+							height: 200,
+							style:{
+								border:'2px solid red'
+							},
+
+							listener: {
+								resize: function (component, width, height, oldWidth, oldHeight, eOpts ) {
+									    console.log("w/h " + width + "  " + height);
+									
+								}
+				
+							}
+						}
+					]
+
+				});
+			}
+		})
+	</script>
+</head>
+<body>
+
+</body>
+</html>

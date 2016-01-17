@@ -73,6 +73,8 @@
     <Content Include="Chapter3_UnderstandingExtJSAPI\Singleton.html" />
     <Content Include="Chapter3_UnderstandingExtJSAPI\Statics.html" />
     <Content Include="Chapter4_ControlsAndLayouts\Component.html" />
+    <Content Include="ComponentsAndDocumentation\ListningToComponentEvents.html" />
+    <Content Include="ComponentsAndDocumentation\Template.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
